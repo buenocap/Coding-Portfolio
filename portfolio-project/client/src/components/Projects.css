@@ -1,0 +1,220 @@
+/* Projects Section */
+.projects-section {
+  padding: 100px 0;
+}
+
+.projects-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(31, 38, 135, 0.5);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border-radius: 12px;
+  color: white;
+}
+
+.project-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.project-features {
+  margin-bottom: 25px;
+}
+
+.project-features h4 {
+  font-size: 1rem;
+  color: #ff7eb3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.project-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-features li {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.project-features li:before {
+  content: "•";
+  color: #ff7eb3;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-link.primary {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: 2px solid transparent;
+  color: white;
+}
+
+.project-link.primary:hover {
+  box-shadow: 0 8px 20px rgba(255, 126, 179, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Projects Note */
+.projects-note {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.projects-note h4 {
+  font-size: 1.3rem;
+  color: #ff7eb3;
+  margin-bottom: 15px;
+}
+
+.projects-note p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+}

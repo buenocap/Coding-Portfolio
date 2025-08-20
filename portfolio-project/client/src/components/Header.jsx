@@ -1,3 +1,5 @@
+import "./Header.css";
+
 export default function Header() {
   function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);

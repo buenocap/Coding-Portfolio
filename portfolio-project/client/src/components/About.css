@@ -1,0 +1,149 @@
+/* About Section */
+.about-section {
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 25px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills Section */
+.skills-section h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #fff, #ff7eb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  padding: 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.skill-header h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* About Highlights */
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.highlight-item {
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.highlight-icon {
+  color: #ff7eb3;
+  margin-bottom: 15px;
+}
+
+.highlight-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.highlight-item p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
