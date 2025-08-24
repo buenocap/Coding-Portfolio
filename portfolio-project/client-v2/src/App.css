@@ -1,0 +1,17 @@
+@import "tailwindcss";
+:root {
+  /* CSS HEX */
+  --slate-gray: #77878bff;
+  --dark-slate-gray: #305252ff;
+  --onyx: #373e40ff;
+  --teal: #488286ff;
+  --light-blue: #b7d5d4ff;
+}
+
+* {
+  background: linear-gradient(90deg, var(--onyx) 0%, var(--slate-gray) 100%);
+  color: whitesmoke;
+}
+
+.App {
+}
