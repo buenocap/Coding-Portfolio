@@ -9,9 +9,34 @@
 }
 
 * {
-  background: linear-gradient(90deg, var(--onyx) 0%, var(--slate-gray) 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: linear-gradient(90deg, var(--onyx) 0%, var(--teal) 100%);
   color: whitesmoke;
 }
 
 .App {
+  color: whitesmoke;
+}
+
+/* Glass Container Base */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 var(--light-blue),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px 0 var(--light-blue),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
